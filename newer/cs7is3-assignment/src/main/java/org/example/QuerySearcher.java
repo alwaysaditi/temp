@@ -25,7 +25,7 @@ public class QuerySearcher {
 System.out.println("actual here= "+actual+" query=  "+queryString);
         List<Map.Entry<Integer, Double>> scoreList = new ArrayList<>();
 
-        String filePath = "cs7is3-assignment/output/custom_similarity.txt";
+        String filePath = "output/custom_similarity.txt";
         File outputFile = new File(filePath);
         if (outputFile.exists() && actual ==0) {
             // Delete the file
