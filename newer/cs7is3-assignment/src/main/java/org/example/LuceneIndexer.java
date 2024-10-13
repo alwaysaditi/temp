@@ -149,7 +149,7 @@ public class LuceneIndexer {
 
     public static void formatQuery() throws IOException, ParseException, java.text.ParseException {
 
-        String queriesPath = "cs7is3-assignment/cran/cran.qry";
+        String queriesPath = "cran/cran.qry";
         BufferedReader buffer = Files.newBufferedReader(Paths.get(queriesPath), StandardCharsets.UTF_8);
         QueryParser parser = new QueryParser("content",analyzer);
         IndexReader reader = DirectoryReader.open(FSDirectory.open(Paths.get("new_index")));
@@ -214,7 +214,7 @@ int count = 1;
         //---------------- Set up file paths ----------------
 
         String indexPath = "new_index";
-        String docsPath = "cs7is3-assignment/cran/cran.all.1400";
+        String docsPath = "cran/cran.all.1400";
         HashSet<String> stopWords = new HashSet<>(Arrays.asList("the", "is", "in", "at", "of", "on", "and", "a", "to"));
         final Path docDir = Paths.get(docsPath);
         CharArraySet stopSet = new CharArraySet(stopWords, true);
