@@ -26,7 +26,7 @@ import java.util.Map;
 
 public class BM25Searcher {
     public static void search(String query, int index) throws IOException {
-        String filePath = "cs7is3-assignment/output/bm25_similarity.txt";
+        String filePath = "output/bm25_similarity.txt";
         File outputFile = new File(filePath);
         if (outputFile.exists() && index == 0) {
             // Delete the file
